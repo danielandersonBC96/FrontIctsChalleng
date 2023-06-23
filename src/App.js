@@ -1,24 +1,43 @@
-import logo from './logo.svg';
+
+//importando as telas
+
+import NavBar from './Components/NavBar';
+import Backdrop from './Components/Backdrop';
+import SideDrawer from './Components/SideDrawer'
+
+//lins e bibliotexas
+
 import './App.css';
+import { BrowserRouter } from 'react-router-dom';
+import RouterShopping from './Routes/routes';
+import { useState } from 'react';
 
 function App() {
+
+  const [sideToggle, setSideToggle] = useState(false)
+
   return (
+    
+    <BrowserRouter>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       {/*Barra de Navegação*/}
+     <NavBar  click={() => setSideToggle(true)}  />
+       {/*Menu latera*/}
+      
+       <SideDrawer show={ sideToggle}  click={ () => setSideToggle(false) } />
+       <Backdrop show={ sideToggle}  click={ () => setSideToggle(false) } />
+       {/*Pano de Fundo */} 
+      
+       {/*Rotas */} 
+        <RouterShopping/> 
+       {/*Tela Inicial*/}
+       {/*Tela do Produto */}
+       {/*Carrinho de compras*/}     
+      
+    
     </div>
+    
+    </BrowserRouter>
   );
 }
 
