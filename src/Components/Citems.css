@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
   gap: 8px;
-  background: #fff;
+  background:  black;
   border-radius: 2px;
   place-items: center;
   margin-bottom: 8px;
@@ -12,7 +12,8 @@
 
 .cartItem__name {
   text-decoration: none;
-  color: #171717;
+  color: #fff;
+  background-color: #171717;
 }
 
 .cartItem__name:hover {

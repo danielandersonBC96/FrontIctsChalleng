@@ -2,10 +2,7 @@ h1{
     color: black;
 }
 
-p{
-    background-color: #171717;
-    
-}
+
 button{
     grid-column: 1/-1;
     width: 100%;
@@ -38,8 +35,12 @@ button{
   .cartscreen__right {
     flex: 0.3;
     background: #fff;
+    background-color: #171717;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
     height: fit-content;
+    position: relative;
+    top:40px;
+    width: 100px;
   }
   
   .cartscreen__right div {
@@ -62,8 +63,8 @@ button{
   .cartscreen__right div button {
     padding: 10px 17px;
     width: 100%;
-    background: #171717;
-    color: #f4f4f4;
+    background: white;
+    color: black;
     border: 1px solid #171717;
     cursor: pointer;
   }

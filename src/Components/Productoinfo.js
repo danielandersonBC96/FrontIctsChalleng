@@ -3,10 +3,10 @@ import "./ProductoInfo.css"
 
 import { Link } from 'react-router-dom'
 
-const Productoinfo = ({ imageUrl, name,price,description,productId}) => {
+const Productoinfo = ({ imageUrl, name,price,description, productId}) => {
     return (
         <div className='product'>
-            <img src={imageUrl} alt={name}/>
+            <img src={ imageUrl} alt={name}/>
             <div className='product__info'>
                 <p className='info__name' > { name} </p>
                 <p className='info__descriotion'> 
