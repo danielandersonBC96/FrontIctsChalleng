@@ -2,7 +2,27 @@ h1{
     color: black;
 }
 
+.title__goback{
+  color:  #fff;
+  background-color: purple;
+  padding: 10px;
+  border-radius: 15px;
+  border:  1px solid #fff;
+  cursor: pointer;
 
+}
+.title__goback:hover{
+color: purple;
+background-color: #fff;
+padding: 10px;
+border-radius: 15px;
+border: 1px  solid purple;
+
+}
+
+.goback{
+  color: red;
+}
 button{
     grid-column: 1/-1;
     width: 100%;
@@ -36,15 +56,15 @@ button{
     flex: 0.3;
     background: #fff;
     background-color:  purple;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 1px 4px white;
     height: fit-content;
     position: relative;
-    top:40px;
-   
+    top:30px;
+     
   }
   
   .cartscreen__right div {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid  white;
     padding: 1rem;
   }
   
