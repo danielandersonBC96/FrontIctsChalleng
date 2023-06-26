@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
   gap: 8px;
-  background:  black;
+  background:   rgba(82, 1, 82, 0.938);
   border-radius: 2px;
   place-items: center;
   margin-bottom: 8px;
@@ -13,7 +13,6 @@
 .cartItem__name {
   text-decoration: none;
   color: #fff;
-  background-color: #171717;
 }
 
 .cartItem__name:hover {
@@ -26,9 +25,9 @@
 
 .cartItem__deleteBtn {
   padding: 10px 17px;
-  color: red;
-  background: #f4f4f4;
-  border: 1px solid #171717;
+  color: white;
+  background:  purple;
+  border: 1px solid  white;
   cursor: pointer;
   transition: all 0.3s ease-out;
 }
@@ -36,8 +35,10 @@
 .cartItem__deleteBtn:hover,
 .carItem__deleteBtn:active,
 .carItem__deleteBtn:focus {
-  background: #171717;
-  transform: scale(1.2);
+  background:  #ffffff;
+  color: #dd219e;
+
+  transform: scale(1.0);
 }
 
 @media (max-width: 700px) {

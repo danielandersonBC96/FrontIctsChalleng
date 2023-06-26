@@ -35,12 +35,12 @@ button{
   .cartscreen__right {
     flex: 0.3;
     background: #fff;
-    background-color: #171717;
+    background-color:  purple;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
     height: fit-content;
     position: relative;
     top:40px;
-    width: 100px;
+   
   }
   
   .cartscreen__right div {
@@ -63,9 +63,9 @@ button{
   .cartscreen__right div button {
     padding: 10px 17px;
     width: 100%;
-    background: white;
-    color: black;
-    border: 1px solid #171717;
+    background: purple;
+    color:  white;
+    border: 1px solid  white;
     cursor: pointer;
   }
   

@@ -1,7 +1,7 @@
 .product {
     width: 330px;
     padding: 1rem;
-    background: black;
+    background:  purple;
     cursor: pointer;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
     margin: 8px auto;
@@ -9,6 +9,7 @@
     flex-direction: column;
     justify-content: space-between;
     flex-direction: column;
+  gap: 10px;
   }
   
   .product > img {
@@ -16,6 +17,10 @@
     height: 170px;
     object-fit: contain;
     border-radius: 8px;
+    position: relative;
+    display: flex;
+    left: 70px;
+  
   }
   
   .product__info > p {
@@ -39,17 +44,17 @@
     display: block;
     text-decoration: none;
     text-align: center;
-    color: #171717;
+    color:  #ffffff;
     width: 100%;
     padding: 8px 16px;
-    background-color: #f4f4f4;
-    border: 1px solid #171717;
+    background-color:  purple;
+    border: 1px solid  #ffffff;
     font-size: 1rem;
   }
   
   .info__button:hover {
-    background: purple;
-    color: #f4f4f4;
+    background:  #ffffff;
+    color:  purple;
   }
   
   @media (max-width: 1232px) {
